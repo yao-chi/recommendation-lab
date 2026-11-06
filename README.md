@@ -173,7 +173,7 @@ Top-10 重排后 NDCG@10 = **0.7115**（对比召回层直接截断 Top-10 的 N
 | `retrieval.py` | 双塔训练加 **logQ 校正**（减去 log 物品频率） | in-batch 负例天然偏向热门，不校正会把热门物品向量压小 |
 | `retrieval.py` | 温度固定 0.07 | 可学习温度会一路坍缩到 0.03，softmax 变 one-hot、梯度消失 |
 | `ranking.py` | `FieldEncoder` 手写 one-hot 偏移 | 避免 sklearn `OneHotEncoder` 在百万级稀疏矩阵上的内存开销 |
-| `scripts/run_all.py` | 召回分数缓存到 `.npz` | 双塔训练 14 分钟，调排序层时不该重跑 |
+| `scripts/run_all.py` | 召回分数缓存到 `.npz` | 双塔训练 18 分钟，调排序层时不该重跑 |
 | 全局 | `RANDOM_STATE = 20261106` 贯穿所有随机源 | 结果可复现 |
 
 ---

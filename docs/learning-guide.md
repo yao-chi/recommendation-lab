@@ -278,11 +278,11 @@ H = 行归一化的稀疏矩阵 (n_users × n_items)
 hist_means = H @ item_matrix        # 一次矩阵乘法算完所有人
 ```
 
-一个 epoch 从十几分钟降到 70 秒。
+一个 epoch 从十几分钟降到 93 秒。
 
 ### 7.2 缓存：调排序层时不该重跑召回
 
-双塔训练 14 分钟。如果每次调 CTR 特征都重跑，一天只能试 3 次。
+双塔训练 18 分钟。如果每次调 CTR 特征都重跑，一天只能试 3 次。
 所以召回分数存成 `outputs/cache/retrieval_scores.npz`（39MB），`--no-cache` 才重训。
 
 ### 7.3 复现：所有随机源都固定
