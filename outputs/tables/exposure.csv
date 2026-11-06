@@ -1,0 +1,5 @@
+﻿coverage,gini,long_tail_share,exposure_entropy,n_distinct_items,model
+0.0135,0.5634,0.6255,3.2505,50,popularity
+0.1997,0.8014,0.0181,5.2601,740,itemcf
+0.4638,0.668,0.149,6.5627,1719,bpr
+0.5216,0.6386,0.1788,6.8001,1933,two-tower

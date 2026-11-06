@@ -1,0 +1,18 @@
+{
+  "n_interactions": 1000209,
+  "n_users": 6040,
+  "n_items": 3706,
+  "duplicate_user_item_pairs": 0,
+  "sparsity": 0.955316,
+  "rating_mean": 3.5816,
+  "rating_std": 1.1171,
+  "ts_min": "2000-04-25",
+  "ts_max": "2003-02-28",
+  "user_activity_p50": 96,
+  "user_activity_p90": 400,
+  "user_activity_max": 2314,
+  "item_pop_p50": 123,
+  "item_pop_p90": 729,
+  "item_pop_max": 3428,
+  "top1pct_item_share": 0.0873
+}

@@ -1,0 +1,21 @@
+# 数据
+data/ml-1m/
+data/*.zip
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+*.egg-info/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# 产物（图表与表格是交付物，保留；缓存与超大中间表不入库）
+outputs/**/*.tmp
+outputs/cache/
+outputs/tables/item_meta.csv
+pytest-cache-files-*/
+
+# 系统
+.DS_Store
+Thumbs.db
